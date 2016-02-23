@@ -45,3 +45,20 @@ m
 }
         ## Return a matrix that is the inverse of 'x'
 
+x = rbind(c(1, -1/2), c(-1/2, 1))
+m = makeCacheMatrix(x)
+m$get()
+
+##No caching in the first run#
+
+cacheSolve(m)
+
+## Retrieving from the cache in the second run#
+
+cacheSolve(m)
+
+##We get the cached data
+
+
+
+
